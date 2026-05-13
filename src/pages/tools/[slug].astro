@@ -1,0 +1,13 @@
+---
+import { getCollection, render } from 'astro:content';
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export async function getStaticPaths() {
+  const entries = await getCollection('tools');
+  return entries.map((entry) => ({ params: { slug: entry.id.replace(/\.(md|mdx)$/i, '') }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+<ContentLayout entry={entry}>
+  <Content />
+</ContentLayout>

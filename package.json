@@ -1,0 +1,27 @@
+{
+  "name": "ai-tools-affiliate",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check:content": "node scripts/check-content.mjs",
+    "verify:integrations": "node scripts/verify-integrations.mjs",
+    "brief": "node scripts/create-tool-brief.mjs",
+    "check": "npm run check:content && astro check && npm run build"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^5.0.4",
+    "@astrojs/sitemap": "^3.7.2",
+    "astro": "^6.1.10",
+    "gray-matter": "^4.0.3",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "typescript": "^5.9.3"
+  }
+}

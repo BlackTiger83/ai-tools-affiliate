@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ToolCard from '../components/ToolCard.astro';
+---
+<BaseLayout title="AI Tools Lab — Evidence-first AI tool reviews" description="A prelaunch AI-tools affiliate portal for evidence-backed reviews, comparisons, alternatives, pricing guidance, and workflow use cases.">
+  <main>
+    <section class="hero">
+      <span class="badge">PRELAUNCH · NOINDEX · PREVIEW ONLY</span>
+      <h1>Find AI tools by the work they actually help you finish.</h1>
+      <p style="max-width:760px;font-size:18px;">AI Tools Lab is being built as an evidence-first affiliate portal: tool hubs, reviews, alternatives, comparisons, pricing guidance, and concrete workflow pages. No fake testing. No recycled vendor copy. No indexing until approved.</p>
+      <a class="cta" href="/tools/">Browse seed tools</a>
+    </section>
+    <section class="section">
+      <h2>Seed tool hubs</h2>
+      <div class="grid">
+        <ToolCard href="/tools/opusclip/" title="OpusClip" category="AI video repurposing" description="Draft hub for researching short-form video clipping, captions, workflows, pricing, and alternatives." />
+        <ToolCard href="/tools/base44/" title="Base44" category="AI app builder" description="Draft hub for researching prompt-to-app workflows, builder fit, limitations, pricing, and comparisons." />
+        <ToolCard href="/tools/opusagent/" title="OpusAgent" category="AI agent tooling" description="Draft hub for researching AI agent workflows, operators, use cases, competitors, and review angles." />
+      </div>
+    </section>
+    <section class="section">
+      <h2>Default content machine</h2>
+      <div class="grid">
+        <div class="card"><h3>Tool name in Telegram</h3><p>Steven sends a tool name. The agent normalizes the product, researches sources, and prepares DataForSEO keyword/SERP work.</p></div>
+        <div class="card"><h3>Five page briefs</h3><p>Review, pricing, alternatives, comparison, and use-case pages are proposed before any drafting.</p></div>
+        <div class="card"><h3>Preview-first</h3><p>Drafts stay review-status, checks run locally, and Vercel preview is created without production/indexing.</p></div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

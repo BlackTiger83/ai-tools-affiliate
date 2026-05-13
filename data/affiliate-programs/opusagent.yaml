@@ -1,0 +1,11 @@
+program: opusagent
+status: unverified
+public_terms_url: null
+private_terms_location: null
+allowed_public_claims: []
+high_risk_private_fields:
+  - commission
+  - cookie_window
+  - trademark_rules
+  - ppc_rules
+  - subid_rules

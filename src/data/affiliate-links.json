@@ -1,0 +1,7 @@
+{
+  "links": [
+    { "slug": "opusclip", "program": "opusclip", "status": "unverified", "destinationEnv": "AFFILIATE_OPUSCLIP", "rel": "sponsored nofollow" },
+    { "slug": "base44", "program": "base44", "status": "unverified", "destinationEnv": "AFFILIATE_BASE44", "rel": "sponsored nofollow" },
+    { "slug": "opusagent", "program": "opusagent", "status": "unverified", "destinationEnv": "AFFILIATE_OPUSAGENT", "rel": "sponsored nofollow" }
+  ]
+}

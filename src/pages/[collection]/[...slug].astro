@@ -1,0 +1,20 @@
+---
+import { getCollection, render } from 'astro:content';
+import ContentLayout from '../../layouts/ContentLayout.astro';
+export async function getStaticPaths() {
+  const collectionNames = ['reviews', 'comparisons', 'alternatives', 'categories', 'guides', 'workflows'] as const;
+  const paths = [];
+  for (const collection of collectionNames) {
+    const entries = await getCollection(collection);
+    for (const entry of entries) {
+      paths.push({ params: { collection, slug: entry.id.replace(/\.(md|mdx)$/i, '') }, props: { entry } });
+    }
+  }
+  return paths;
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+<ContentLayout entry={entry}>
+  <Content />
+</ContentLayout>

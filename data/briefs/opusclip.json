@@ -1,0 +1,49 @@
+{
+  "tool": "OpusClip",
+  "slug": "opusclip",
+  "createdAt": "2026-05-13T21:52:06.687Z",
+  "status": "brief_seed",
+  "pages": [
+    {
+      "type": "review",
+      "url": "/tools/opusclip/review/",
+      "keyword": "OpusClip review",
+      "intent": "commercial",
+      "angle": "Who should use OpusClip, who should skip it, and what workflow it actually improves."
+    },
+    {
+      "type": "pricing",
+      "url": "/tools/opusclip/pricing/",
+      "keyword": "OpusClip pricing",
+      "intent": "commercial",
+      "angle": "Plan-fit guidance without hard-coding stale prices."
+    },
+    {
+      "type": "alternatives",
+      "url": "/tools/opusclip/alternatives/",
+      "keyword": "OpusClip alternatives",
+      "intent": "comparison",
+      "angle": "Decision tree by use case, budget, and workflow constraints."
+    },
+    {
+      "type": "comparison",
+      "url": "/compare/opusclip-vs-competitor/",
+      "keyword": "OpusClip vs competitor",
+      "intent": "comparison",
+      "angle": "Pick a direct competitor after SERP and product research."
+    },
+    {
+      "type": "guide",
+      "url": "/guides/opusclip-workflow/",
+      "keyword": "how to use OpusClip",
+      "intent": "tutorial",
+      "angle": "Concrete workflow page that proves practical value."
+    }
+  ],
+  "next": [
+    "Run Firecrawl/source research",
+    "Run DataForSEO keyword suggestions US/en",
+    "Replace competitor placeholder",
+    "Ask Steven for draft approval"
+  ]
+}

@@ -1,0 +1,8 @@
+---
+const { href, title, description, category, status = 'review' } = Astro.props;
+---
+<a class="card" href={href} style="display:block;text-decoration:none;">
+  <div class="meta"><span class="pill">{category}</span><span class="pill">{status}</span></div>
+  <h3>{title}</h3>
+  <p>{description}</p>
+</a>

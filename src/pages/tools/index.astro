@@ -1,0 +1,16 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ToolCard from '../../components/ToolCard.astro';
+const tools = await getCollection('tools');
+const slugOf = (id:string) => id.replace(/\.(md|mdx)$/i, '');
+---
+<BaseLayout title="AI Tool Hubs" description="Seed AI tool hubs for future evidence-backed affiliate research.">
+  <main class="section">
+    <span class="badge">TOOLS</span>
+    <h1>AI tool hubs</h1>
+    <div class="grid">
+      {tools.map((entry) => <ToolCard href={`/tools/${slugOf(entry.id)}/`} title={entry.data.title} description={entry.data.description} category={entry.data.cluster} status={entry.data.status} />)}
+    </div>
+  </main>
+</BaseLayout>

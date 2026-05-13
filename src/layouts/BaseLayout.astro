@@ -1,0 +1,31 @@
+---
+import '../styles/global.css';
+import { site } from '../data/site';
+const { title = site.name, description = site.tagline } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <a class="logo" href="/">AI Tools<span>Lab</span></a>
+        <div class="navlinks">
+          <a href="/tools/">Tools</a>
+          <a href="/categories/video-tools/">Categories</a>
+          <a href="/affiliate-disclosure/">Disclosure</a>
+        </div>
+      </nav>
+      <slot />
+      <footer class="footer">
+        <div>Prelaunch preview. Public indexing is intentionally blocked until explicit launch approval.</div>
+      </footer>
+    </div>
+  </body>
+</html>

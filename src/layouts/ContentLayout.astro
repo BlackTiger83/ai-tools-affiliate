@@ -1,0 +1,18 @@
+---
+import BaseLayout from './BaseLayout.astro';
+const { entry } = Astro.props;
+---
+<BaseLayout title={entry.data.title} description={entry.data.description}>
+  <main class="content">
+    <span class="badge">{entry.data.status.toUpperCase()} · {entry.data.intent}</span>
+    <h1>{entry.data.title}</h1>
+    <p>{entry.data.description}</p>
+    <div class="meta">
+      <span class="pill">Cluster: {entry.data.cluster}</span>
+      <span class="pill">Risk: {entry.data.risk}</span>
+      <span class="pill">Updated: {(entry.data.updatedDate || entry.data.pubDate).toISOString().slice(0,10)}</span>
+    </div>
+    <div class="notice">Affiliate disclosure: this preview may contain affiliate CTAs later. Recommendations must remain evidence-backed and not pay-to-rank.</div>
+    <slot />
+  </main>
+</BaseLayout>
