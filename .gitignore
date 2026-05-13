@@ -11,3 +11,4 @@ evidence/private/
 data/**/*.db
 npm-debug.log*
 .DS_Store
+.vercel
